@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CastCVCell" customModule="MaoTrailer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="108" height="186"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-FV-Aog" customClass="ShadowImageView" customModule="MaoTrailer" customModuleProvider="target">
+                        <rect key="frame" x="-50" y="0.0" width="208" height="120"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="xAZ-bG-jmK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="blurRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="imageCornerRaidus">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadiusOffSetPercentage">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetByY">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jennifer Carpenter" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zGH-Vu-bvR" customClass="PaddingLabel" customModule="MaoTrailer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="120" width="108" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="Jw5-Bi-Kb4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UHr-56-KnC" customClass="PaddingLabel" customModule="MaoTrailer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="146" width="108" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="tf7-co-WGG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fMs-FV-Aog" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="3cm-F6-ilG"/>
+                <constraint firstItem="zGH-Vu-bvR" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="Ic7-OK-Ple"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="UHr-56-KnC" secondAttribute="trailing" id="PKf-2y-818"/>
+                <constraint firstItem="UHr-56-KnC" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="Pw6-jl-B9y"/>
+                <constraint firstItem="zGH-Vu-bvR" firstAttribute="top" secondItem="fMs-FV-Aog" secondAttribute="bottom" id="WZM-XV-wha"/>
+                <constraint firstItem="fMs-FV-Aog" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="-50" id="hW1-UF-H2h"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="zGH-Vu-bvR" secondAttribute="trailing" id="ob9-dX-cKn"/>
+                <constraint firstItem="UHr-56-KnC" firstAttribute="top" secondItem="zGH-Vu-bvR" secondAttribute="bottom" constant="-5" id="ogv-9S-MN2"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="fMs-FV-Aog" secondAttribute="trailing" constant="-50" id="tKM-zc-qyR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="108" height="186"/>
+            <connections>
+                <outlet property="image" destination="fMs-FV-Aog" id="W29-KZ-8JZ"/>
+                <outlet property="nameLabel" destination="zGH-Vu-bvR" id="2lq-Yw-wcg"/>
+                <outlet property="roleLabel" destination="UHr-56-KnC" id="sEU-2v-rQ1"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="-94"/>
+        </collectionViewCell>
+    </objects>
+</document>

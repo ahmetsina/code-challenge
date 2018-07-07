@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NowPlayingCVCell" id="gTV-IL-0wX" customClass="NowPlayingCVCell" customModule="MaoTrailer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="154" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="154" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="48E-kK-mZq">
+                        <rect key="frame" x="0.0" y="185" width="154" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="1e5-Je-u1h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Is0-zU-Xd7" customClass="ShadowImageView" customModule="MaoTrailer" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="154" height="193"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="blurRadius">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="imageCornerRaidus">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadiusOffSetPercentage">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowAlpha">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffSetByY">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="48E-kK-mZq" firstAttribute="top" secondItem="Is0-zU-Xd7" secondAttribute="bottom" constant="-8" id="A3i-vP-irV"/>
+                <constraint firstItem="Is0-zU-Xd7" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="CKM-UV-Mtx"/>
+                <constraint firstAttribute="bottom" secondItem="48E-kK-mZq" secondAttribute="bottom" id="DrB-pp-eND"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Is0-zU-Xd7" secondAttribute="trailing" id="I0y-35-XIR"/>
+                <constraint firstItem="Is0-zU-Xd7" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="WKk-zF-8LI"/>
+                <constraint firstItem="48E-kK-mZq" firstAttribute="leading" secondItem="Is0-zU-Xd7" secondAttribute="leading" id="ogu-c3-7FW"/>
+                <constraint firstItem="48E-kK-mZq" firstAttribute="trailing" secondItem="Is0-zU-Xd7" secondAttribute="trailing" id="ulz-ck-hy6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="74" height="116"/>
+            <connections>
+                <outlet property="backgroundImage" destination="Is0-zU-Xd7" id="W9R-e2-zcm"/>
+                <outlet property="nameLabel" destination="48E-kK-mZq" id="BiH-pq-gRW"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="87"/>
+        </collectionViewCell>
+    </objects>
+</document>
